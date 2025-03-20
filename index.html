@@ -1,0 +1,132 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ini cdn untuk menghubungkan tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- cdn untuk menyambungkan ke font -->
+    <link href="https://fonts.cdnfonts.com/css/fredoka-one" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/plus-jakarta-sans" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+        @theme {
+        /* ini untuk cutom font */
+        --font-fredoka-one: 'Fredoka One', sans-serif;
+        --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
+        /* ini untuk custom warna */
+          --color-nav-main: #FFF0EB;
+          --color-main: #FFE7DF;
+          --color-border-search: #E1967C;
+          --color-clifford: #da373d;
+          --color-menu-active: #904E37;
+          --color-main-menu: #E1967C;
+
+        }
+      </style>
+
+  </head>
+  <body class="font-fredoka-one">
+
+    <!-- navigation bar start -->
+    <header class="bg-nav-main p-4 fixed top-0 w-full">
+
+       <div class="flex justify-between items-center px-10 py-5">
+            <!-- ini search bar -->
+            <input type="text" class="bg-white text-border-search border border-border-search w-60 rounded-xl px-2 py-1 font-plus-jakarta-sans" placeholder="Cari Disini">
+
+            <!-- logo navbar -->
+            <img src="assets/logo.png" alt="" class="w-[100px]">
+
+            <!-- ini menu -->
+            <nav>
+                <ul class="flex gap-4">
+                    <li class="text-menu-active">Beranda</li>
+                    <li class="text-main-menu">Menu</li>
+                    <li class="text-main-menu">Tentang</li>
+                    <li class="text-main-menu">Kontak</li>
+                </ul>
+            </nav>  
+       </div>
+       
+    </header>
+    <!-- navigation bar end -->
+
+    <!-- hero section start -->
+    <section class="bg-gradient-to-b from-main to-nav-main/80 h-screen pt-32">
+        <div class="flex gap-4 px-10 ">
+
+            <!-- ini bagian kue -->
+            <div class="w-full flex flex-col">
+                <!-- ini bagian kue besar -->
+                <div class="flex flex-col items-center justify-center">
+                    <img src="assets/img-cake1.png" alt="" class="w-[500px]">
+                    <h1 class="text-4xl text-main-menu">Classic Chocolate Cake</h1>
+                </div>
+                <!-- ini bagian menu kecil -->
+                <div class="grid grid-cols-6 gap-4 mt-6">
+                    
+                    <div class="bg-main flex items-center justify-center border-4 border-border-search rounded-full p-3">
+                        <img src="assets/img-cake1.png" alt="" >
+                    </div>
+                    <div class="bg-main flex items-center justify-center  rounded-full p-3 hover:border-4 hover:border-border-search transition-all ease-out duration-400">
+                        <img src="assets/img-cake2.png" alt="" >
+                    </div>
+                    <div class="bg-main flex items-center justify-center  rounded-full p-3 hover:border-4 hover:border-border-search transition-all ease-out duration-400">
+                        <img src="assets/img-cake3.png" alt="" >
+                    </div>
+                    <div class="bg-main flex items-center justify-center  rounded-full p-3 hover:border-4 hover:border-border-search transition-all ease-out duration-400">
+                        <img src="assets/img-cake4.png" alt="" >
+                    </div>
+                    <div class="bg-main flex items-center justify-center  rounded-full p-3 hover:border-4 hover:border-border-search transition-all ease-out duration-400">
+                        <img src="assets/img-cake5.png" alt="" >
+                    </div>
+                    <div class="bg-main flex items-center justify-center  rounded-full p-3 hover:border-4 hover:border-border-search transition-all ease-out duration-400">
+                        <img src="assets/img-cake6.png" alt="" >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ini bagian menu -->
+            <div class=" w-1/2 flex flex-col p-4 gap-4">
+               
+                <div class="bg-gradient-to-b from-white to-nav-main px-4 py-10 rounded-2xl">
+                    <h1 class="text-4xl text-main-menu">Classic Chocolate Cake</h1>
+                    <p class="mt-4 font-plus-jakarta-sans text-main-menu">
+                        Nikmati kelembutan dan kelezatan tak tertandingi dari Classic Chocolate Cake kami. Dibuat dengan cokelat premium, setiap lapisan kue ini menghadirkan sensasi cokelat yang kaya, berpadu dengan ganache cokelat pekat yang meleleh di mulut.
+                    </p>
+                    <div class="mt-4 font-plus-jakarta-sans text-main-menu">
+                        <h4>Ingredients : </h4>
+                        <ul class="list-disc ml-6">
+                            <li>Tepung terigu protein sedang</li>
+                            <li>Bubuk kakao premium</li>
+                            <li>Gula pasir</li>
+                            <li>Telur ayam segar</li>
+                            <li>Butter unsalted</li>
+                            <li>Dark chocolate compound</li>
+                            <li>Susu cair</li>
+                            <li>Baking powder & soda kue</li>
+                            <li>Garam & vanilla extract</li>
+                        </ul>
+                    </div>
+                    <h1 class="mt-4 text-2xl text-main-menu">Rp. 100.000</h1>
+
+                </div>
+                
+                <button class="bg-main-menu py-4 text-xl text-white rounded-2xl">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- hero section end -->
+
+  </body>
+</html>
